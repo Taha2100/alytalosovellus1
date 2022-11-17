@@ -1,0 +1,32 @@
+﻿<Window x:Class="Älytalosovellus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Älytalosovellus"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtb_olohuonedimmer" HorizontalAlignment="Left" Height="23" Margin="52,191,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="250"/>
+        <Slider x:Name="sld_olohuonedimmer" HorizontalAlignment="Left" Margin="111,146,0,0" VerticalAlignment="Top" Width="106" ValueChanged="sld_olohuonedimmer_ValueChanged" Maximum="100"/>
+        <Label x:Name="lbl_olohuonevalo" Content="Valo Pois" HorizontalAlignment="Left" Margin="111,83,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSetTemp" Content="Aseta" HorizontalAlignment="Left" Margin="496,169,0,0" VerticalAlignment="Top" Width="137" Height="34" Click="btnSetTemp_Click" Background="#FF41A8A3"/>
+        <TextBox x:Name="txtSetTemp" HorizontalAlignment="Left" Height="37" Margin="496,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <Label x:Name="lblCurrentTemp" Content="" HorizontalAlignment="Left" Margin="496,83,0,0" VerticalAlignment="Top" Width="137" Height="39" Background="#FFFFCDCD"/>
+        <Label x:Name="lblSaunaLampoTila" Content="" HorizontalAlignment="Left" Margin="250,246,0,0" VerticalAlignment="Top" Width="155" Height="44" FontWeight="Bold" FontSize="17"/>
+        <Button x:Name="btnSaunaOn" Content="Sauna Päälle" HorizontalAlignment="Left" Height="44" Margin="95,295,0,0" VerticalAlignment="Top" Width="148" FontWeight="Bold" FontSize="17" Click="btnSaunaOn_Click"/>
+        <Button x:Name="btnSaunaOff" Content="Sauna Pois Päältä" HorizontalAlignment="Left" Height="44" Margin="95,344,0,0" VerticalAlignment="Top" Width="148" FontSize="17" FontWeight="Bold" Click="btnSaunaOff_Click"/>
+        <Label x:Name="lblSaunaStatus" Content="" HorizontalAlignment="Left" Height="44" Margin="250,295,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="lblSaunanlampo" Content="Saunan Lämpötila:" HorizontalAlignment="Left" Height="35" Margin="83,255,0,0" VerticalAlignment="Top" Width="161" FontWeight="Bold" FontSize="17" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.185"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>
